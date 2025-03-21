@@ -1,0 +1,49 @@
+import React from 'react';
+import { Card, CardContent } from '@/components/ui/card';
+import { Button } from '@/components/ui/button';
+
+export default function Home() {
+  return (
+    <div className="bg-gray-100 min-h-screen p-4">
+      <header className="bg-blue-600 text-white p-6 rounded-2xl shadow-lg mb-8">
+        <h1 className="text-4xl font-bold">Jeronimo Scheer Amelunge</h1>
+        <p className="mt-2 text-lg">Palestrante e especialista em vendas e sucesso do cliente</p>
+      </header>
+
+      <section className="mb-8">
+        <h2 className="text-2xl font-semibold mb-4">Sobre Mim</h2>
+        <p>Profissional com sólida experiência em vendas, retenção de clientes e sucesso do cliente. Ofereço palestras inspiradoras, treinamentos estratégicos e consultoria especializada para equipes comerciais que buscam resultados excepcionais.</p>
+      </section>
+
+      <section className="mb-8">
+        <h2 className="text-2xl font-semibold mb-4">Serviços</h2>
+        <Card className="mb-4">
+          <CardContent>
+            <h3 className="text-xl font-semibold">Palestras Motivacionais</h3>
+            <p>Inspire sua equipe com palestras dinâmicas sobre vendas e atendimento ao cliente.</p>
+          </CardContent>
+        </Card>
+        <Card className="mb-4">
+          <CardContent>
+            <h3 className="text-xl font-semibold">Treinamentos de Vendas</h3>
+            <p>Capacite sua equipe com técnicas eficazes de negociação, persuasão e fidelização.</p>
+          </CardContent>
+        </Card>
+        <Card className="mb-4">
+          <CardContent>
+            <h3 className="text-xl font-semibold">Consultoria Especializada</h3>
+            <p>Estratégias personalizadas para otimizar resultados e melhorar a retenção de clientes.</p>
+          </CardContent>
+        </Card>
+      </section>
+
+      <section className="mb-8">
+        <h2 className="text-2xl font-semibold mb-4">Contato</h2>
+        <p>Entre em contato para contratar palestras, treinamentos ou consultoria.</p>
+        <p>Email: jeronimoamelunge@gmail.com</p>
+        <p>Telefone: (51) 99376-0417</p>
+        <Button className="mt-4" onClick={() => alert('Obrigado pelo interesse!')}>Solicitar Contato</Button>
+      </section>
+    </div>
+  );
+}
